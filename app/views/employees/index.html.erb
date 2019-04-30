@@ -1,0 +1,14 @@
+<h1>Employees's Index Page!</h1>
+
+<h2><%= link_to "New Employee", "#{employees_path}/new" %></h2>
+<br>
+<% @employees.each do |employee| %>
+
+  <p><%= link_to employee.full_name, employee %></p>
+
+<% end %>
+
+<br>
+<br>
+<br>
+<h2><%= link_to "Go to Dogs Page", dogs_path %></h2>

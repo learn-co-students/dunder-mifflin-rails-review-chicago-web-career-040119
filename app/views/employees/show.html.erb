@@ -1,0 +1,12 @@
+<h1>Employee's Show Page</h1>
+<h2><%= link_to "Edit", "#{employee_path}/edit" %></h2>
+<br>
+<%= image_tag @employee.img_url %>
+<br>
+<h4>Name: <%= @employee.full_name %></h4>
+<h4>Alias: <%= @employee.alias %></h4>
+<h4>Title: <%= @employee.title %></h4>
+<h4>Office: <%= @employee.office %></h4>
+<h4>Dog: <%= link_to @employee.dog.name, @employee.dog %></h4>
+<br>
+<h4><%= link_to "Back to All Employees", employees_path %></h4>

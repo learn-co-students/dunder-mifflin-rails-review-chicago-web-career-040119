@@ -1,0 +1,11 @@
+<h1>Dog's Index Page!</h1>
+
+<% @dogs.each do |dog| %>
+
+  <p><%= link_to dog.name, dog %></p>
+
+<% end %>
+<br>
+<br>
+<br>
+<h2><%= link_to "Go to Employees Page", employees_path %></h2>
