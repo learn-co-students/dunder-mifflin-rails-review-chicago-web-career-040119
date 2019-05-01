@@ -35,8 +35,8 @@ class DogsController < ApplicationController
   end
 
   def destroy
-    @employee.destroy
-    redirect_to employees_path
+    @dog.destroy
+    redirect_to dogs_path
   end
 
   private
